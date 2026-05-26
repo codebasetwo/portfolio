@@ -1,0 +1,96 @@
+#about { 
+    background: var(--bg2); 
+}
+
+.about-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 4rem; 
+    align-items: center; 
+}
+
+.about-text p { 
+    font-size: 14px; 
+    color: var(--muted); 
+    line-height: 1.9; 
+    margin-bottom: 1rem; 
+}
+
+.about-text p strong { 
+    color: var(--text); 
+    font-weight: 500; 
+}
+
+.terminal-block { 
+    background: var(--bg); 
+    border: 1px solid var(--border); 
+    border-radius: 6px; 
+    overflow: hidden; 
+}
+
+.terminal-bar { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    padding: 0.75rem 1rem; 
+    background: var(--surface); 
+    border-bottom: 1px solid var(--border); 
+}
+
+.dot { 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+}
+
+.dot-red { 
+    background: #ff5f56; 
+}
+
+.dot-yellow { 
+    background: #ffbd2e; 
+}
+
+.dot-green { 
+    background: #27c93f; 
+}
+
+.terminal-title { 
+    font-size: 11px; 
+    color: var(--faint); 
+    margin-left: auto; 
+}
+
+.terminal-body { 
+    padding: 1.5rem; 
+    font-size: 12px; 
+    line-height: 2; 
+}
+
+.t-prompt { 
+    color: var(--green); 
+}
+
+.t-cmd { 
+    color: var(--text); 
+}
+
+.t-out { 
+    color: var(--muted); 
+}
+
+.t-comment { 
+    color: var(--faint); 
+}
+
+.t-key { 
+    color: #79b8ff; 
+}
+
+.t-val { 
+    color: #f97583; 
+}
+
+.t-str { 
+    color: #9ecbff; 
+}

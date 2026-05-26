@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nnaemeka Nwankwo — Systems Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- CSS Files -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo"><span>~/</span>nnaemeka</div>
+  <ul>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Available for work</div>
+    <h1 class="hero-name">Nnaemeka<br><span class="accent">Nwankwo</span></h1>
+    <div class="hero-role"><span id="typewriter">_</span><span class="cursor"></span></div>
+    <p class="hero-desc">
+      I build fast, reliable systems at the boundary of Rust and Python — from
+      high-throughput web APIs to async microservices. I care about correctness,
+      performance, and code that reads like prose.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects ↓</a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num">4+</div>
+      <div class="stat-label">Years coding</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Projects shipped</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">2</div>
+      <div class="stat-label">Core languages</div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <div class="section-line"></div>
+    <h2 class="section-title">Skills &amp; Stack</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card rust reveal reveal-delay-1">
+      <span class="skill-icon">🦀</span>
+      <div class="skill-name">Rust</div>
+      <p class="skill-desc">Systems programming with a focus on zero-cost abstractions, ownership semantics, and fearless concurrency. I use Rust for performance-critical services where safety matters as much as speed.</p>
+      <div class="skill-tags">
+        <span class="tag tag-rust">Actix-web</span>
+        <span class="tag tag-rust">Tokio</span>
+        <span class="tag tag-rust">SQLx</span>
+        <span class="tag tag-rust">Serde</span>
+      </div>
+    </div>
+    <div class="skill-card python reveal reveal-delay-2">
+      <span class="skill-icon">🐍</span>
+      <div class="skill-name">Python</div>
+      <p class="skill-desc">Web APIs, data pipelines, and automation. Python is my go-to for rapid iteration, integrating ML models, and building high-level services that talk to the broader ecosystem.</p>
+      <div class="skill-tags">
+        <span class="tag tag-python">FastAPI</span>
+        <span class="tag tag-python">aiohttp</span>
+        <span class="tag tag-python">SQLAlchemy</span>
+        <span class="tag tag-python">Pydantic</span>
+        <span class="tag tag-python">Celery</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-3">
+      <span class="skill-icon">⚙️</span>
+      <div class="skill-name">Infrastructure</div>
+      <p class="skill-desc">I deploy and maintain the systems I build — containers, CI/CD pipelines, and cloud infrastructure. If it runs in production, I take full ownership of its lifecycle.</p>
+      <div class="skill-tags">
+        <span class="tag tag-green">Docker</span>
+        <span class="tag tag-green">PostgreSQL</span>
+        <span class="tag tag-green">Redis</span>
+        <span class="tag tag-green">Nginx</span>
+        <span class="tag tag-green">GitHub Actions</span>
+        <span class="tag tag-green">Linux</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-4">
+      <span class="skill-icon">🔗</span>
+      <div class="skill-name">API Design</div>
+      <p class="skill-desc">REST and GraphQL APIs designed for humans — versioned, documented, and predictable. I design contracts first and let the implementation follow.</p>
+      <div class="skill-tags">
+        <span class="tag tag-green">REST</span>
+        <span class="tag tag-green">WebSockets</span>
+        <span class="tag tag-green">gRPC</span>
+        <span class="tag tag-green">OpenAPI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <div class="section-line"></div>
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-list">
+    <div class="project-card reveal">
+      <div>
+        <div class="project-meta">
+          <span class="project-num">001</span>
+          <span class="project-lang tag tag-rust">Rust</span>
+        </div>
+        <div class="project-title">FerroCache — High-Performance In-Memory Store</div>
+        <p class="project-desc">A Redis-compatible in-memory data store built from scratch in Rust. Handles 500k+ ops/sec on commodity hardware using lock-free data structures and Tokio async I/O. Supports TTL, pub/sub, and persistence snapshots.</p>
+        <div class="project-stack">
+          <span class="tag tag-rust">Tokio</span>
+          <span class="tag tag-rust">DashMap</span>
+          <span class="tag tag-green">TCP</span>
+          <span class="tag tag-green">RESP Protocol</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div>
+        <div class="project-meta">
+          <span class="project-num">002</span>
+          <span class="project-lang tag tag-python">Python</span>
+        </div>
+        <div class="project-title">PulseAPI — Real-Time Analytics Backend</div>
+        <p class="project-desc">An async event ingestion and analytics API built with FastAPI and Celery. Processes millions of events per day with sub-100ms p99 latency. Features a live dashboard powered by WebSocket streams and TimescaleDB.</p>
+        <div class="project-stack">
+          <span class="tag tag-python">FastAPI</span>
+          <span class="tag tag-python">Celery</span>
+          <span class="tag tag-green">TimescaleDB</span>
+          <span class="tag tag-green">Redis</span>
+          <span class="tag tag-green">Docker</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div>
+        <div class="project-meta">
+          <span class="project-num">003</span>
+          <span class="project-lang tag tag-rust">Rust</span>
+        </div>
+        <div class="project-title">OxideMQ — Lightweight Message Queue</div>
+        <p class="project-desc">A persistent, ordered message queue with at-least-once delivery guarantees. Exposes a simple HTTP API for producers and consumers. Built with Axum and an append-only log storage engine for durability without heavy dependencies.</p>
+        <div class="project-stack">
+          <span class="tag tag-rust">Actix-web</span>
+          <span class="tag tag-rust">SQLx</span>
+          <span class="tag tag-green">PostgreSQL</span>
+          <span class="tag tag-green">REST</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-3">
+      <div>
+        <div class="project-meta">
+          <span class="project-num">004</span>
+          <span class="project-lang tag tag-python">Python</span>
+        </div>
+        <div class="project-title">ChronoTask — Distributed Job Scheduler</div>
+        <p class="project-desc">A cron-like distributed task scheduler that survives node failures and guarantees exactly-once execution using leader election and distributed locking. Used to orchestrate data pipeline jobs across multiple worker nodes.</p>
+        <div class="project-stack">
+          <span class="tag tag-python">Django</span>
+          <span class="tag tag-python">aiohttp</span>
+          <span class="tag tag-green">Redis</span>
+          <span class="tag tag-green">Docker Swarm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <div class="section-line"></div>
+    <h2 class="section-title">About</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm <strong>Nnaemeka Nwankwo</strong>, a web developer based in Nigeria with a deep interest in systems programming and backend infrastructure. I started with Python, fell in love with its expressiveness, then discovered Rust — and found a new obsession with writing code that is both provably safe and blazingly fast.</p>
+      <p>My work sits at the intersection of <strong>performance engineering</strong> and <strong>developer experience</strong>. I believe backend systems should be reliable enough that you forget they exist, and expressive enough that maintaining them is a pleasure.</p>
+      <p>When I'm not pushing commits, I'm reading language specs, contributing to open source, or thinking about distributed systems problems that sound impossible until they aren't.</p>
+    </div>
+    <div class="terminal-block reveal reveal-delay-2">
+      <div class="terminal-bar">
+        <div class="dot dot-red"></div>
+        <div class="dot dot-yellow"></div>
+        <div class="dot dot-green"></div>
+        <span class="terminal-title">whoami.json</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-prompt">$ </span><span class="t-cmd">cat whoami.json</span></div>
+        <div style="margin-top:0.5rem"><span class="t-out">{</span></div>
+        <div style="padding-left:1.5rem"><span class="t-key">"name"</span><span class="t-out">: </span><span class="t-str">"Nnaemeka Nwankwo"</span><span class="t-out">,</span></div>
+        <div style="padding-left:1.5rem"><span class="t-key">"location"</span><span class="t-out">: </span><span class="t-str">"Nigeria"</span><span class="t-out">,</span></div>
+        <div style="padding-left:1.5rem"><span class="t-key">"languages"</span><span class="t-out">: [</span><span class="t-str">"Rust"</span><span class="t-out">, </span><span class="t-str">"Python"</span><span class="t-out">],</span></div>
+        <div style="padding-left:1.5rem"><span class="t-key">"focus"</span><span class="t-out">: </span><span class="t-str">"Web backends &amp; systems"</span><span class="t-out">,</span></div>
+        <div style="padding-left:1.5rem"><span class="t-key">"available"</span><span class="t-out">: </span><span class="t-val">true</span><span class="t-out">,</span></div>
+        <div style="padding-left:1.5rem"><span class="t-key">"coffee_dependent"</span><span class="t-out">: </span><span class="t-val">true</span></div>
+        <div><span class="t-out">}</span></div>
+        <div style="margin-top:0.75rem"><span class="t-prompt">$ </span><span class="t-comment"># ready to build something great</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-label reveal">// Let's work together</div>
+  <h2 class="contact-title reveal">Got a project<br>in mind?</h2>
+  <p class="contact-sub reveal">I'm open to freelance contracts, full-time roles, and interesting technical conversations. Reach out — I reply within 24 hours.</p>
+  <div class="reveal">
+    <a href="mailto:nuaemeka@gmail.com" class="contact-email">nuaemeka@gmail.com</a>
+  </div>
+  <div class="social-links reveal">
+    <a href="https://github.com/codebasetwo" class="social-link" target="_blank">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+      </svg>
+      GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/emekan/" class="social-link" target="_blank">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+      LinkedIn
+    </a>
+    <a href="https://twitter.com/codebasetwo" class="social-link" target="_blank">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+      Twitter / X
+    </a>
+  </div>
+</section>
+<footer>
+  <div>© 2026 <span>Nnaemeka Nwankwo</span> — Built with care</div>
+  <div>Rust 🦀 + Python 🐍</div>
+</footer>
+</body>
+</html>

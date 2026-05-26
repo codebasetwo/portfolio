@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    nav { 
+        padding: 1rem 1.5rem; 
+    }
+
+    nav ul { 
+        display: none; 
+    }
+
+    section { 
+        padding: 4rem 1.5rem; 
+    }
+
+    #hero { 
+        padding: 6rem 1.5rem 3rem; 
+    }
+
+    .hero-stats { 
+        display: none; 
+    }
+
+    .about-grid { 
+        grid-template-columns: 1fr; 
+    }
+
+    h1.hero-name { 
+        font-size: 3rem; 
+    }
+
+    footer { 
+        flex-direction: column; 
+        gap: 0.5rem; 
+        text-align: center; 
+    }
+}
