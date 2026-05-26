@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <!-- CSS Files -->
 <link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/hero.css">
 <link rel="stylesheet" href="css/skills.css">
@@ -38,7 +38,7 @@
     <div class="hero-role"><span id="typewriter">_</span><span class="cursor"></span></div>
     <p class="hero-desc">
       I build fast, reliable systems at the boundary of Rust and Python — from
-      high-throughput web APIs to async microservices. I care about correctness,
+      high-throughput web APIs to async microservices to ML services. I care about correctness,
       performance, and code that reads like prose.
     </p>
     <div class="hero-actions">
@@ -112,7 +112,7 @@
     <div class="skill-card reveal reveal-delay-4">
       <span class="skill-icon">🔗</span>
       <div class="skill-name">API Design</div>
-      <p class="skill-desc">REST and GraphQL APIs designed for humans — versioned, documented, and predictable. I design contracts first and let the implementation follow.</p>
+      <p class="skill-desc">REST APIs designed for humans — versioned, documented, and predictable. I design contracts first and let the implementation follow.</p>
       <div class="skill-tags">
         <span class="tag tag-green">REST</span>
         <span class="tag tag-green">WebSockets</span>
@@ -136,13 +136,19 @@
           <span class="project-num">001</span>
           <span class="project-lang tag tag-rust">Rust</span>
         </div>
-        <div class="project-title">FerroCache — High-Performance In-Memory Store</div>
-        <p class="project-desc">A Redis-compatible in-memory data store built from scratch in Rust. Handles 500k+ ops/sec on commodity hardware using lock-free data structures and Tokio async I/O. Supports TTL, pub/sub, and persistence snapshots.</p>
+        <div class="project-title">Night-Chat — High-Performance Chat Application</div>
+        <p class="project-desc">
+          A full-featured, real-time chat app with custom secure authentication, live presence indicators.
+          Unlike many chat apps that rely on third-party authentication, this project implements custom authentication from ground up.
+          <br>Welcome Emails: Automated via Resend API when a new user signs up
+          <br>Media Sharing: Image uploads seamlessly integrated with Cloudinary.
+          <br>Rate Limiting.
+        </p>
         <div class="project-stack">
           <span class="tag tag-rust">Tokio</span>
-          <span class="tag tag-rust">DashMap</span>
+          <span class="tag tag-rust">WebSockets</span>
           <span class="tag tag-green">TCP</span>
-          <span class="tag tag-green">RESP Protocol</span>
+          <span class="tag tag-green">Async</span>
         </div>
       </div>
     </div>
@@ -152,14 +158,24 @@
           <span class="project-num">002</span>
           <span class="project-lang tag tag-python">Python</span>
         </div>
-        <div class="project-title">PulseAPI — Real-Time Analytics Backend</div>
-        <p class="project-desc">An async event ingestion and analytics API built with FastAPI and Celery. Processes millions of events per day with sub-100ms p99 latency. Features a live dashboard powered by WebSocket streams and TimescaleDB.</p>
+        <div class="project-title">NewsClasifer — Distributed ML</div>
+        <p class="project-desc">
+          Cut through the online noise. An end-to-end ML service that automatically categorizes news articles from trusted sources, so you only see what matters to you.
+          Built with MLOps best practices, this project goes beyond a simple notebook. It includes:
+          Automated Workflows: Continuous training, tuning, and deployment (CI/CD) for better models over time.
+          Experiment Tracking: Uses MLflow to log experiments, parameters, and model performance.
+          Production-Ready Serving: Provides a local API endpoint (/predict) to run inference on new article headlines or descriptions.
+          Robust Testing: Includes data, code, and model validation using pytest
+        </p>
         <div class="project-stack">
           <span class="tag tag-python">FastAPI</span>
-          <span class="tag tag-python">Celery</span>
-          <span class="tag tag-green">TimescaleDB</span>
-          <span class="tag tag-green">Redis</span>
+          <span class="tag tag-python">Pytest</span>
+          <span class="tag tag-green">Jupyter Notebooks</span>
           <span class="tag tag-green">Docker</span>
+          <span class="tag tag-green">CI/CD</span>
+          <span class="tag tag-green">MLOps</span>
+          <span class="tag tag-green">MLflow</span>
+          <span class="tag tag-green">Gemeni</span>
         </div>
       </div>
     </div>
@@ -167,15 +183,22 @@
       <div>
         <div class="project-meta">
           <span class="project-num">003</span>
-          <span class="project-lang tag tag-rust">Rust</span>
+          <span class="project-lang tag tag-python">Python</span>
         </div>
-        <div class="project-title">OxideMQ — Lightweight Message Queue</div>
-        <p class="project-desc">A persistent, ordered message queue with at-least-once delivery guarantees. Exposes a simple HTTP API for producers and consumers. Built with Axum and an append-only log storage engine for durability without heavy dependencies.</p>
+        <div class="project-title">Book Review Backend API</div>
+        <p class="project-desc">
+          A full-featured RESTful API built with FastAPI that enables users to discover, upload, and review books. 
+          Features include book submission management, user reviews and ratings, genre-based tagging system, and JWT-based authentication. 
+          Built with SQLAlchemy ORM, PostgreSQL database, Celery for async tasks, and comprehensive unit testing with pytest. 
+          Deployed with production-ready configurations including email notifications, caching strategies, and error handling.
+        </p>
         <div class="project-stack">
-          <span class="tag tag-rust">Actix-web</span>
-          <span class="tag tag-rust">SQLx</span>
+          <span class="tag tag-python">FastAPI</span>
+          <span class="tag tag-python">Celery</span>
           <span class="tag tag-green">PostgreSQL</span>
-          <span class="tag tag-green">REST</span>
+          <span class="tag tag-green">Alembic</span>
+          <span class="tag tag-green">Redis</span>
+          <span class="tag tag-green">Docker</span>
         </div>
       </div>
     </div>
@@ -183,15 +206,14 @@
       <div>
         <div class="project-meta">
           <span class="project-num">004</span>
-          <span class="project-lang tag tag-python">Python</span>
+          <span class="project-lang tag tag-rust">Rust</span>
         </div>
-        <div class="project-title">ChronoTask — Distributed Job Scheduler</div>
-        <p class="project-desc">A cron-like distributed task scheduler that survives node failures and guarantees exactly-once execution using leader election and distributed locking. Used to orchestrate data pipeline jobs across multiple worker nodes.</p>
+        <div class="project-title">Base-web — From TCP to HTTP</div>
+        <p class="project-desc">A Simple multi-threaded web server</p>
         <div class="project-stack">
-          <span class="tag tag-python">Django</span>
-          <span class="tag tag-python">aiohttp</span>
-          <span class="tag tag-green">Redis</span>
-          <span class="tag tag-green">Docker Swarm</span>
+          <span class="tag tag-rust">TCP</span>
+          <span class="tag tag-rust">HTTP</span>
+          <span class="tag tag-green">Mutex</span>
         </div>
       </div>
     </div>
@@ -206,7 +228,7 @@
   </div>
   <div class="about-grid">
     <div class="about-text reveal">
-      <p>I'm <strong>Nnaemeka Nwankwo</strong>, a web developer based in Nigeria with a deep interest in systems programming and backend infrastructure. I started with Python, fell in love with its expressiveness, then discovered Rust — and found a new obsession with writing code that is both provably safe and blazingly fast.</p>
+      <p>I'm <strong>Nnaemeka Nwankwo</strong>, a Machine learning engineer and web developer based in Nigeria with a deep interest in systems programming and backend infrastructure. I started with Python, fell in love with its expressiveness, then discovered Rust — and found a new obsession with writing code that is both provably safe and blazingly fast.</p>
       <p>My work sits at the intersection of <strong>performance engineering</strong> and <strong>developer experience</strong>. I believe backend systems should be reliable enough that you forget they exist, and expressive enough that maintaining them is a pleasure.</p>
       <p>When I'm not pushing commits, I'm reading language specs, contributing to open source, or thinking about distributed systems problems that sound impossible until they aren't.</p>
     </div>
